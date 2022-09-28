@@ -1,0 +1,48 @@
+.button {
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 23px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 10px 50px;
+  transition: all 0.7s ease;
+}
+
+.button.white {
+  border: 2px solid #fff;
+}
+.button.white:hover {
+  background-color: rgb(226, 223, 223);
+  color: black;
+  transform: scale(1.07);
+}
+
+.button.blue {
+  border: 2px solid #00a7ef;
+  color: #00a7ef;
+  align-self: center;
+}
+
+.button.button.blue:hover {
+  background-color: #00a7ef;
+  color: white;
+  transform: scale(1.07);
+  border: 2px solid transparent;
+}
+
+.button-card {
+  background: #00a7ef;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 300px;
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

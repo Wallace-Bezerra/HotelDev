@@ -1,0 +1,80 @@
+@import url(./reset.css);
+@import url(./componentes.css);
+
+.background {
+  height: 533px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(./assets/img/IMAGEM-PRAIA.jpg);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  color: white;
+}
+
+.main h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.main p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.s-city {
+  display: flex;
+}
+.info-city {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fdff;
+}
+.info-content {
+  max-width: 524px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.info-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.services {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services h2 {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #4a4a4a;
+}
+.cards-services {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+}
+
+.card img {
+  margin-bottom: 18px;
+}
