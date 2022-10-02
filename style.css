@@ -5,6 +5,8 @@
   height: 533px;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(./assets/img/IMAGEM-PRAIA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-blend-mode: overlay;
   display: flex;
   justify-content: center;
@@ -28,10 +30,14 @@
   margin-bottom: 33px;
 }
 
-.s-city {
+.city {
   display: flex;
 }
+.city img {
+  max-width: 600px;
+}
 .info-city {
+  padding-inline: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,11 +58,26 @@
   text-align: center;
   color: #4a4a4a;
 }
+
+@media (max-width: 1000px) {
+  .city {
+    flex-direction: column;
+  }
+  .city img {
+    max-width: initial;
+    width: 100%;
+  }
+  .info-city {
+    padding-block: 50px;
+  }
+}
 .services {
   padding-top: 80px;
+  padding-inline: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 140px;
 }
 .services h2 {
   max-width: 976px;
@@ -77,4 +98,92 @@
 
 .card img {
   margin-bottom: 18px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.card img:hover {
+  opacity: 0.9;
+}
+@media (max-width: 1000px) {
+  .cards-services {
+    max-width: 900px;
+    width: 100%;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 760px) {
+  .services {
+    margin-bottom: 60px;
+  }
+}
+
+.contact {
+  display: flex;
+  height: 382px;
+}
+.contact .info-contato {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8fdff;
+  color: #4a4a4a;
+  text-align: center;
+}
+.contact .info-contato h2 {
+  font-weight: 700;
+  max-width: 323px;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 20px;
+}
+.contact .info-contato a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  transition: color 0.4s ease;
+}
+.contact .info-contato a:hover {
+  color: rgb(218, 146, 47);
+}
+@media (max-width: 1200px) {
+  .contact img {
+    object-fit: cover;
+    object-position: right;
+    width: 100%;
+    height: 382px;
+  }
+}
+@media (max-width: 760px) {
+  .contact {
+    height: 300px;
+  }
+  .contact img {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .contact .info-contato h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+footer {
+  height: 89px;
+  background: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+@media (max-width: 420px) {
+  footer {
+    font-size: 16px;
+  }
 }

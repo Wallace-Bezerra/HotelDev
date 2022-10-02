@@ -45,4 +45,9 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  transition: 0.5s ease;
+}
+.button-card:hover {
+  background-color: rgba(0, 168, 240, 0.8);
+  transform: scale(1.03);
 }
